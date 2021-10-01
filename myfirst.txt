@@ -1,0 +1,29 @@
+//@dart=2.9
+
+import 'dart:io';
+void main() {
+  var lenovo = new Laps(name: "Lenovo",price: 50000,processor: "inteli7",RAM: 8);
+  var asus = new Laps(name: "Asus",price: 47000,processor: "inteli5",RAM: 4);
+  var hp = new Laps(name: "HP",price: 55000,processor: "inteli5",RAM: 8);
+  lenovo.printinformation();
+  asus.printinformation();
+  hp.printinformation();
+
+
+}
+  class Laps
+  {
+    String name;
+    var price;
+    String processor;
+    var RAM;
+
+    Laps({this.name,this.price,this.processor,this.RAM});
+    void printinformation(){
+      print('This is $name it has $processor processor and $RAM RAM as Rs $price');
+
+    }
+
+  }
+
+
